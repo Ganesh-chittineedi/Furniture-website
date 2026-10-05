@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+    background: #D5C8B5;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8B4513;
+}
+.shimmer-text {
+    background: linear-gradient(90deg, #FDE68A 0%, #FFFFFF 50%, #FDE68A 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+}
+.glowing-border {
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Furniture | Premier Teakwood & Home Furniture Store in Palakollu</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind custom theme (colors, fonts, animations) -->
+    <script src="js/tailwind-config.js"></script>
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-warmBg text-textMain font-sans antialiased selection:bg-brandAmber selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- EYE-CATCHING ANIMATED TOP HEADER BANNER -->
+    <div class="relative overflow-hidden bg-gradient-to-r from-woodDark via-woodTeak to-woodDark text-amber-100 text-xs sm:text-sm font-medium py-2.5 shadow-lg border-b border-amber-500/30">
+        
+        <!-- Animated Glowing Overlay Particles -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(245,158,11,0.25),transparent_70%)] animate-pulseGlow pointer-events-none"></div>
+
+        <!-- Floating Furniture Icons in Background Animation -->
+        <div class="absolute inset-0 flex justify-between items-center opacity-25 pointer-events-none px-6 sm:px-12">
+            <i class="fa-solid fa-couch text-amber-300 text-xl animate-floatItem"></i>
+            <i class="fa-solid fa-chair text-amber-300 text-xl animate-floatItem" style="animation-delay: 0.8s;"></i>
+            <i class="fa-solid fa-bed text-amber-300 text-xl animate-floatItem" style="animation-delay: 1.6s;"></i>
+            <i class="fa-solid fa-table-cells text-amber-300 text-xl animate-floatItem" style="animation-delay: 2.4s;"></i>
+        </div>
+
+        <!-- Top Static Callout Bar for Mobile & Quick Contact -->
+        <div class="max-w-7xl mx-auto px-4 mb-1.5 hidden lg:flex items-center justify-between text-[11px] text-amber-200/90 border-b border-amber-500/20 pb-1">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center space-x-1.5">
+                    <i class="fa-solid fa-location-dot text-brandGold animate-bounceSlow"></i>
+                    <span>Palakollu, West Godavari, Andhra Pradesh</span>
+                </span>
+                <span class="flex items-center space-x-1.5">
+                    <i class="fa-solid fa-envelope text-brandGold"></i>
+                    <a href="mailto:ganeshchittineedi@gmail.com" class="hover:text-white transition-colors underline decoration-amber-400/50">ganeshchittineedi@gmail.com</a>
+                </span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="bg-amber-500/20 px-2 py-0.5 rounded text-amber-300 font-bold border border-amber-400/30">
+                    ✨ Grand Discounts Available
+                </span>
+                <a href="tel:9381548456" class="flex items-center space-x-1 text-white font-bold hover:text-amber-300 transition-colors">
+                    <i class="fa-solid fa-phone text-emerald-400"></i>
+                    <span>+91 9381548456</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Smooth Continuous Marquee Ticker with Animated Badges -->
+        <div class="flex whitespace-nowrap animate-marquee relative z-10">
+            <div class="flex items-center space-x-8 px-4">
+                <span class="inline-flex items-center space-x-2 bg-amber-500/20 px-3 py-1 rounded-full border border-amber-400/30">
+                    <span class="animate-ping w-2 h-2 rounded-full bg-amber-400"></span>
+                    <strong class="shimmer-text font-bold text-base">GANESH FURNITURE PALAKOLLU</strong>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                    <span>Top Quality Teakwood Sofas, Dining Sets & Chairs</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-location-dot text-amber-400"></i>
+                    <strong class="text-white">Location:</strong> Palakollu, West Godavari, AP
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-phone text-emerald-400"></i>
+                    <strong class="text-white">Call / WhatsApp:</strong>
+                    <a href="tel:9381548456" class="font-bold text-amber-300 hover:underline">+91 9381548456</a>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-envelope text-amber-400"></i>
+                    <a href="mailto:ganeshchittineedi@gmail.com" class="font-bold text-white hover:underline">ganeshchittineedi@gmail.com</a>
+                </span>
+                <span class="bg-gradient-to-r from-amber-500 to-amber-600 text-woodDark font-extrabold px-2.5 py-0.5 rounded shadow-sm">
+                    🛋️ Up to 35% OFF Store Orders
+                </span>
+            </div>
+
+            <!-- Duplicate Marquee Content for Infinite Loop -->
+            <div class="flex items-center space-x-8 px-4" aria-hidden="true">
+                <span class="inline-flex items-center space-x-2 bg-amber-500/20 px-3 py-1 rounded-full border border-amber-400/30">
+                    <span class="animate-ping w-2 h-2 rounded-full bg-amber-400"></span>
+                    <strong class="shimmer-text font-bold text-base">GANESH FURNITURE PALAKOLLU</strong>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                    <span>Top Quality Teakwood Sofas, Dining Sets & Chairs</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-location-dot text-amber-400"></i>
+                    <strong class="text-white">Location:</strong> Palakollu, West Godavari, AP
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-phone text-emerald-400"></i>
+                    <strong class="text-white">Call / WhatsApp:</strong>
+                    <a href="tel:9381548456" class="font-bold text-amber-300 hover:underline">+91 9381548456</a>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-envelope text-amber-400"></i>
+                    <a href="mailto:ganeshchittineedi@gmail.com" class="font-bold text-white hover:underline">ganeshchittineedi@gmail.com</a>
+                </span>
+                <span class="bg-gradient-to-r from-amber-500 to-amber-600 text-woodDark font-extrabold px-2.5 py-0.5 rounded shadow-sm">
+                    🛋️ Up to 35% OFF Store Orders
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 bg-warmBg/95 backdrop-blur-md border-b border-borderSand shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo: Ganesh Furniture -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 bg-gradient-to-br from-brandAmber via-woodTeak to-woodDark rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform duration-300 relative">
+                    <i class="fa-solid fa-couch text-xl"></i>
+                    <span class="absolute -top-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border-2 border-white"></span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-bold text-2xl tracking-wide text-woodDark leading-none">GANESH</span>
+                    <span class="text-[10px] tracking-[0.2em] text-brandAmber font-bold uppercase mt-0.5">FURNITURE • PALAKOLLU</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center space-x-7 text-xs font-bold uppercase tracking-wider text-textMain">
+                <a href="#hero" class="hover:text-brandAmber transition-colors py-1 border-b-2 border-transparent hover:border-brandAmber">Home</a>
+                <a href="#shop" onclick="filterCategory('all')" class="hover:text-brandAmber transition-colors py-1 border-b-2 border-transparent hover:border-brandAmber">All Furniture</a>
+                <a href="#shop" onclick="filterCategory('sofas')" class="hover:text-brandAmber transition-colors py-1 border-b-2 border-transparent hover:border-brandAmber">Sofas</a>
+                <a href="#shop" onclick="filterCategory('chairs')" class="hover:text-brandAmber transition-colors py-1 border-b-2 border-transparent hover:border-brandAmber">Chairs</a>
+                <a href="#shop" onclick="filterCategory('tables')" class="hover:text-brandAmber transition-colors py-1 border-b-2 border-transparent hover:border-brandAmber">Tables</a>
+                <a href="#shop" onclick="filterCategory('beds')" class="hover:text-brandAmber transition-colors py-1 border-b-2 border-transparent hover:border-brandAmber">Beds</a>
+                <a href="#contact" class="hover:text-brandAmber transition-colors py-1 border-b-2 border-transparent hover:border-brandAmber">Contact & Store</a>
+            </nav>
+
+            <!-- Actions, Direct Email/Phone Buttons & Cart -->
+            <div class="flex items-center space-x-3">
+                
+                <!-- Search Input -->
+                <div class="relative hidden sm:block">
+                    <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Search sofas, chairs in ₹..." class="w-40 lg:w-52 bg-white text-xs rounded-full pl-9 pr-4 py-2 border border-borderSand focus:outline-none focus:border-brandAmber focus:ring-1 focus:ring-brandAmber transition-all shadow-sm">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-textMuted text-xs"></i>
+                </div>
+
+                <!-- Direct Email Quick CTA -->
+                <a href="mailto:ganeshchittineedi@gmail.com" class="p-2.5 rounded-full hover:bg-borderSand text-woodDark font-bold transition-colors hidden xl:flex items-center space-x-1.5 text-xs bg-white border border-borderSand shadow-sm" title="Email Ganesh Furniture">
+                    <i class="fa-solid fa-envelope text-brandAmber"></i>
+                    <span class="max-w-[130px] truncate">ganeshchittineedi</span>
+                </a>
+
+                <!-- Direct Phone Quick CTA -->
+                <a href="tel:9381548456" class="p-2.5 rounded-full hover:bg-borderSand text-woodDark font-bold transition-colors hidden sm:flex items-center space-x-1.5 text-xs bg-white border border-borderSand shadow-sm" title="Call Ganesh Furniture">
+                    <i class="fa-solid fa-phone text-emerald-600 animate-pulse"></i>
+                    <span>9381548456</span>
+                </a>
+
+                <!-- Cart Toggle Button -->
+                <button onclick="toggleCartDrawer()" class="p-2.5 rounded-full hover:bg-borderSand text-textMain transition-colors relative flex items-center justify-center bg-white shadow-sm border border-borderSand" title="View Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping text-lg text-brandAmber"></i>
+                    <span id="cartBadge" class="absolute -top-1.5 -right-1.5 bg-woodTeak text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md scale-100 transition-transform">0</span>
+                </button>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl text-textMain bg-white border border-borderSand focus:outline-none">
+                    <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-warmBg border-b border-borderSand px-4 pt-3 pb-6 space-y-3 shadow-inner">
+            <div class="mb-3">
+                <input type="text" oninput="handleSearch()" placeholder="Search Ganesh Furniture catalog in ₹..." class="w-full bg-white text-xs rounded-xl pl-9 pr-4 py-2.5 border border-borderSand focus:outline-none">
+            </div>
+            
+            <div class="grid grid-cols-2 gap-2 pb-2 border-b border-borderSand/60">
+                <a href="tel:9381548456" class="flex items-center justify-center space-x-1.5 bg-emerald-600 text-white py-2 rounded-xl text-xs font-bold shadow-sm">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Store</span>
+                </a>
+                <a href="mailto:ganeshchittineedi@gmail.com" class="flex items-center justify-center space-x-1.5 bg-woodDark text-white py-2 rounded-xl text-xs font-bold shadow-sm">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email Us</span>
+                </a>
+            </div>
+
+            <a href="#hero" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-textMain hover:text-brandAmber border-b border-borderSand/50">Home</a>
+            <a href="#shop" onclick="toggleMobileMenu(); filterCategory('all')" class="block py-2 text-sm font-semibold text-textMain hover:text-brandAmber border-b border-borderSand/50">All Products</a>
+            <a href="#shop" onclick="toggleMobileMenu(); filterCategory('sofas')" class="block py-2 text-sm font-semibold text-textMain hover:text-brandAmber border-b border-borderSand/50">Living Room Sofas</a>
+            <a href="#shop" onclick="toggleMobileMenu(); filterCategory('chairs')" class="block py-2 text-sm font-semibold text-textMain hover:text-brandAmber border-b border-borderSand/50">Wooden Chairs</a>
+            <a href="#shop" onclick="toggleMobileMenu(); filterCategory('tables')" class="block py-2 text-sm font-semibold text-textMain hover:text-brandAmber border-b border-borderSand/50">Dining & Center Tables</a>
+            <a href="#shop" onclick="toggleMobileMenu(); filterCategory('beds')" class="block py-2 text-sm font-semibold text-textMain hover:text-brandAmber border-b border-borderSand/50">Teak Wooden Beds</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-textMain hover:text-brandAmber">Visit Palakollu Store</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative py-12 lg:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Info Block -->
+            <div class="lg:col-span-6 space-y-6 z-10 text-center lg:text-left">
+                
+                <div class="inline-flex items-center space-x-2 bg-amber-100/80 border border-amber-300 px-3.5 py-1.5 rounded-full text-woodTeak text-xs font-bold shadow-sm">
+                    <i class="fa-solid fa-award text-brandAmber"></i>
+                    <span>Trusted Furniture Store • Palakollu, West Godavari</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-woodDark tracking-tight leading-tight">
+                    Crafting Elegance <br class="hidden sm:inline">
+                    <span class="text-brandAmber italic">For Your Palakollu Home</span>
+                </h1>
+                
+                <p class="text-base sm:text-lg text-textMuted max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    At <strong class="text-woodDark">Ganesh Furniture</strong>, we design long-lasting Teakwood sofas, ergonomic chairs, dining table sets, and bed frames with fair Indian Rupee (₹) direct pricing.
+                </p>
+
+                <!-- Action CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+                    <a href="#shop" class="w-full sm:w-auto px-7 py-3.5 bg-gradient-to-r from-brandAmber to-woodTeak hover:from-woodTeak hover:to-woodDark text-white font-semibold rounded-xl shadow-lg shadow-brandAmber/20 hover:shadow-xl transition-all duration-300 text-center flex items-center justify-center gap-2">
+                        <span>Explore Collection in ₹</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    
+                    <a href="https://wa.me/919381548456" target="_blank" class="w-full sm:w-auto px-7 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition-all duration-300 text-center shadow-md flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp (+91 9381548456)</span>
+                    </a>
+                </div>
+
+                <!-- Contact & Location Pill Badges -->
+                <div class="pt-4 flex flex-wrap justify-center lg:justify-start gap-3 text-xs text-textMuted">
+                    <a href="mailto:ganeshchittineedi@gmail.com" class="flex items-center space-x-1.5 bg-white border border-borderSand px-3 py-1.5 rounded-lg hover:border-brandAmber transition-colors">
+                        <i class="fa-solid fa-envelope text-brandAmber"></i>
+                        <span class="font-semibold text-woodDark">ganeshchittineedi@gmail.com</span>
+                    </a>
+                    <div class="flex items-center space-x-1.5 bg-white border border-borderSand px-3 py-1.5 rounded-lg">
+                        <i class="fa-solid fa-location-dot text-brandAmber"></i>
+                        <span class="font-semibold text-woodDark">West Godavari, AP</span>
+                    </div>
+                </div>
+
+                <!-- Feature Counters -->
+                <div class="pt-6 grid grid-cols-3 gap-4 border-t border-borderSand text-center lg:text-left">
+                    <div>
+                        <p class="text-2xl font-extrabold text-woodDark">100%</p>
+                        <p class="text-xs text-textMuted font-medium">Solid Teak Wood</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-extrabold text-woodDark">Palakollu</p>
+                        <p class="text-xs text-textMuted font-medium">Free Local Delivery</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-extrabold text-woodDark">₹ Best</p>
+                        <p class="text-xs text-textMuted font-medium">Direct Store Rates</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Hero Image Showcase with Floating Card -->
+            <div class="lg:col-span-6 relative">
+                <div class="absolute -top-10 -right-10 w-72 h-72 bg-brandAmber/20 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-white border-4 border-white group">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80" alt="Ganesh Furniture Sofa Living Room" onerror="this.src='https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80'" class="w-full h-[380px] sm:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700">
+                    
+                    <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-borderSand max-w-sm flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-woodTeak font-bold text-2xl flex-shrink-0">
+                            🛋️
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-brandAmber uppercase tracking-wider">Store Bestseller</p>
+                            <p class="text-sm font-bold text-woodDark">Royal Teak L-Shape Sofa Set</p>
+                            <p class="text-xs font-extrabold text-woodTeak">₹28,999 <span class="line-through text-textMuted font-normal text-[10px] ml-1">₹36,000</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUCT CATALOG SECTION -->
+    <section id="shop" class="py-12 bg-white border-t border-borderSand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-woodDark">Furniture Catalog</h2>
+                    <p class="text-sm text-textMuted mt-1">Check genuine price quotes in Indian Rupee (₹) for Palakollu & surrounding areas.</p>
+                </div>
+
+                <!-- Sorting and Filter Controls -->
+                <div class="flex flex-wrap items-center gap-3">
+                    <select id="sortSelect" onchange="handleSort()" class="bg-warmBg text-xs font-bold text-textMain border border-borderSand rounded-xl px-3.5 py-2.5 focus:outline-none focus:border-brandAmber shadow-sm">
+                        <option value="default">Sort By: Featured</option>
+                        <option value="lowToHigh">Price: Low to High (₹)</option>
+                        <option value="highToLow">Price: High to Low (₹)</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="flex flex-wrap gap-2 mb-8" id="categoryFilters">
+                <button onclick="filterCategory('all')" class="cat-btn active px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-woodDark text-white border-woodDark shadow-sm">All Items</button>
+                <button onclick="filterCategory('sofas')" class="cat-btn px-5 py-2 rounded-full text-xs font-bold border border-borderSand bg-warmBg text-textMain hover:border-brandAmber transition-all duration-200">Sofas & Couches</button>
+                <button onclick="filterCategory('chairs')" class="cat-btn px-5 py-2 rounded-full text-xs font-bold border border-borderSand bg-warmBg text-textMain hover:border-brandAmber transition-all duration-200">Wooden Chairs</button>
+                <button onclick="filterCategory('tables')" class="cat-btn px-5 py-2 rounded-full text-xs font-bold border border-borderSand bg-warmBg text-textMain hover:border-brandAmber transition-all duration-200">Tables & Dining</button>
+                <button onclick="filterCategory('beds')" class="cat-btn px-5 py-2 rounded-full text-xs font-bold border border-borderSand bg-warmBg text-textMain hover:border-brandAmber transition-all duration-200">Wooden Beds</button>
+            </div>
+
+            <!-- Dynamic Product Cards Grid -->
+            <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+                <!-- Javascript populates items here -->
+            </div>
+
+            <!-- Empty State Message -->
+            <div id="noProductsMsg" class="hidden text-center py-16 bg-warmBg rounded-2xl border border-dashed border-borderSand my-6">
+                <i class="fa-solid fa-couch text-4xl text-textMuted mb-3"></i>
+                <h3 class="text-lg font-bold text-woodDark">No furniture matched your search</h3>
+                <p class="text-sm text-textMuted">Try searching another term like sofa, chair, table, or bed.</p>
+                <button onclick="filterCategory('all')" class="mt-4 px-4 py-2 bg-brandAmber text-white rounded-lg text-xs font-bold">View All Furniture</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- STORE CONTACT & SHOWROOM LOCATION SECTION -->
+    <section id="contact" class="py-12 bg-warmBg border-t border-borderSand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl border border-borderSand shadow-lg p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-6 space-y-5">
+                    <span class="text-xs font-bold text-brandAmber uppercase tracking-wider bg-amber-100 px-3 py-1 rounded-full inline-block">Palakollu Showroom</span>
+                    <h2 class="text-2xl sm:text-3xl font-serif font-bold text-woodDark">Ganesh Furniture Details</h2>
+                    <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                        Need custom woodwork, specific dimensions, or direct store visits? Contact us directly via Phone, Email, or WhatsApp.
+                    </p>
+
+                    <div class="space-y-3.5 pt-2 text-xs sm:text-sm">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-amber-100 text-woodTeak flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <strong class="text-woodDark">Store Address:</strong>
+                                <p class="text-textMuted">Main Road, Palakollu, West Godavari District, Andhra Pradesh - 534260</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong class="text-woodDark">Phone / Contact:</strong>
+                                <a href="tel:9381548456" class="text-emerald-700 font-bold hover:underline ml-1">+91 9381548456</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong class="text-woodDark">Email Address:</strong>
+                                <a href="mailto:ganeshchittineedi@gmail.com" class="text-blue-700 font-bold hover:underline ml-1">ganeshchittineedi@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <strong class="text-woodDark">WhatsApp Direct:</strong>
+                                <a href="https://wa.me/919381548456" target="_blank" class="text-emerald-700 font-bold hover:underline ml-1">+91 9381548456</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="lg:col-span-6 bg-warmBg p-6 sm:p-7 rounded-2xl border border-borderSand space-y-4 shadow-sm">
+                    <h3 class="font-bold text-base text-woodDark">Quick Furniture Quote Inquiry</h3>
+                    <form onsubmit="handleInquirySubmit(event)" class="space-y-3">
+                        <input type="text" id="inquiryName" required placeholder="Your Name" class="w-full bg-white text-xs rounded-xl px-4 py-3 border border-borderSand focus:outline-none focus:border-brandAmber">
+                        <input type="tel" id="inquiryPhone" required placeholder="Phone Number" class="w-full bg-white text-xs rounded-xl px-4 py-3 border border-borderSand focus:outline-none focus:border-brandAmber">
+                        <textarea id="inquiryMsg" rows="3" required placeholder="Specify items (sofa, dining table, chair, bed frame, etc.)" class="w-full bg-white text-xs rounded-xl px-4 py-3 border border-borderSand focus:outline-none focus:border-brandAmber"></textarea>
+                        <button type="submit" class="w-full py-3.5 bg-woodDark hover:bg-woodTeak text-white font-bold rounded-xl text-xs transition-colors shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send Inquiry via WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-woodDark border-t border-borderSand pt-12 pb-8 text-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            
+            <!-- Brand Info -->
+            <div class="space-y-4 md:col-span-1">
+                <div class="flex items-center space-x-3">
+                    <div class="w-9 h-9 bg-brandAmber rounded-lg flex items-center justify-center text-white">
+                        <i class="fa-solid fa-couch text-sm"></i>
+                    </div>
+                    <span class="font-serif font-bold text-xl tracking-wide text-white">GANESH FURNITURE</span>
+                </div>
+                <p class="text-xs text-amber-200/80 leading-relaxed">
+                    Palakollu's signature furniture store. Crafting handcrafted teakwood sofas, dining tables, chairs, and custom home furniture.
+                </p>
+                <div class="flex space-x-3 text-white pt-1">
+                    <a href="https://wa.me/919381548456" target="_blank" class="w-8 h-8 rounded-full bg-woodTeak flex items-center justify-center hover:bg-brandAmber transition-colors" title="WhatsApp"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+                    <a href="tel:9381548456" class="w-8 h-8 rounded-full bg-woodTeak flex items-center justify-center hover:bg-brandAmber transition-colors" title="Call"><i class="fa-solid fa-phone text-xs"></i></a>
+                    <a href="mailto:ganeshchittineedi@gmail.com" class="w-8 h-8 rounded-full bg-woodTeak flex items-center justify-center hover:bg-brandAmber transition-colors" title="Email"><i class="fa-solid fa-envelope text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div>
+                <h5 class="font-bold text-sm mb-4 text-amber-300">Product Collections</h5>
+                <ul class="space-y-2 text-xs text-amber-200/80">
+                    <li><a href="#shop" onclick="filterCategory('sofas')" class="hover:text-white transition-colors">3-Seater Teak Sofas</a></li>
+                    <li><a href="#shop" onclick="filterCategory('sofas')" class="hover:text-white transition-colors">L-Shape Corner Sofas</a></li>
+                    <li><a href="#shop" onclick="filterCategory('chairs')" class="hover:text-white transition-colors">Rocking & Armchairs</a></li>
+                    <li><a href="#shop" onclick="filterCategory('tables')" class="hover:text-white transition-colors">6-Seater Dining Sets</a></li>
+                    <li><a href="#shop" onclick="filterCategory('beds')" class="hover:text-white transition-colors">Teak Wood Bed Frames</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h5 class="font-bold text-sm mb-4 text-amber-300">Customer Support</h5>
+                <ul class="space-y-2 text-xs text-amber-200/80">
+                    <li><a href="#contact" class="hover:text-white transition-colors">Palakollu Store Visit</a></li>
+                    <li><a href="#contact" class="hover:text-white transition-colors">Custom Size Orders</a></li>
+                    <li><a href="mailto:ganeshchittineedi@gmail.com" class="hover:text-white transition-colors">Email Support</a></li>
+                    <li><a href="tel:9381548456" class="hover:text-white transition-colors">Phone Inquiry</a></li>
+                </ul>
+            </div>
+
+            <!-- Showroom Details Card -->
+            <div class="bg-woodTeak/50 p-5 rounded-2xl border border-amber-500/20 space-y-3">
+                <h5 class="font-bold text-sm text-amber-300 flex items-center gap-2">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Showroom Address</span>
+                </h5>
+                <p class="text-xs text-amber-100 font-semibold leading-relaxed">
+                    Ganesh Furniture<br>
+                    Main Road, Palakollu,<br>
+                    West Godavari, AP - 534260
+                </p>
+                <div class="pt-2 border-t border-amber-500/20 space-y-1.5 text-xs text-amber-200">
+                    <p class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-brandAmber"></i>
+                        <a href="tel:9381548456" class="font-bold text-white hover:underline">+91 9381548456</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-brandAmber"></i>
+                        <a href="mailto:ganeshchittineedi@gmail.com" class="font-bold text-white hover:underline truncate">ganeshchittineedi@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 border-t border-amber-900/60 flex flex-col sm:flex-row justify-between items-center text-[11px] text-amber-200/60 gap-4">
+            <p>&copy; 2026 Ganesh Furniture (Palakollu, West Godavari, Andhra Pradesh). All rights reserved.</p>
+            <p>Quality Wooden Furniture in ₹ (INR)</p>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OUT SHOPPING CART DRAWER -->
+    <div id="cartOverlay" onclick="toggleCartDrawer()" class="fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-96 bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+        <div class="p-5 border-b border-borderSand flex items-center justify-between bg-warmBg">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-bag-shopping text-brandAmber"></i>
+                <h3 class="font-bold text-lg text-woodDark">Ganesh Furniture Bag</h3>
+            </div>
+            <button onclick="toggleCartDrawer()" class="p-2 text-textMuted hover:text-textMain">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+
+        <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-5 space-y-4">
+            <!-- Dynamic Cart Items Populated by JS -->
+        </div>
+
+        <div class="p-5 border-t border-borderSand bg-warmBg space-y-3">
+            <div class="flex justify-between text-sm font-medium">
+                <span class="text-textMuted">Subtotal</span>
+                <span id="cartSubtotal" class="font-bold text-woodDark">₹0</span>
+            </div>
+            <div class="flex justify-between text-sm font-medium">
+                <span class="text-textMuted">Local Delivery (Palakollu)</span>
+                <span class="text-emerald-600 font-bold">FREE</span>
+            </div>
+            <div class="border-t border-borderSand pt-2 flex justify-between text-base font-bold text-woodDark">
+                <span>Total Amount</span>
+                <span id="cartTotal" class="text-brandAmber">₹0</span>
+            </div>
+            <button onclick="handleCheckout()" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl transition-all shadow-md text-sm mt-2 flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Order via WhatsApp (+91 9381548456)</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- QUICK VIEW MODAL -->
+    <div id="quickViewModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 relative flex flex-col md:flex-row">
+            <button onclick="closeQuickView()" class="absolute top-4 right-4 z-10 bg-white/80 backdrop-blur-md rounded-full p-2 text-textMain hover:bg-borderSand transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="md:w-1/2 bg-warmBg">
+                <img id="modalImage" src="" alt="Furniture Preview" class="w-full h-64 md:h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80'">
+            </div>
+            <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <span id="modalCategory" class="text-[10px] font-bold text-brandAmber uppercase tracking-wider bg-amber-100 px-2.5 py-1 rounded-full inline-block"></span>
+                    <h3 id="modalTitle" class="text-2xl font-serif font-bold text-woodDark"></h3>
+                    <div class="flex items-center space-x-2">
+                        <div id="modalStars" class="text-amber-400 text-xs"></div>
+                        <span id="modalRating" class="text-xs font-semibold text-textMuted"></span>
+                    </div>
+                    <div class="flex items-baseline space-x-3 pt-1">
+                        <span id="modalPrice" class="text-2xl font-extrabold text-woodTeak"></span>
+                        <span id="modalOldPrice" class="text-sm line-through text-textMuted"></span>
+                    </div>
+                    <p id="modalDescription" class="text-xs text-textMuted leading-relaxed pt-2 border-t border-borderSand"></p>
+                </div>
+
+                <div class="pt-6 space-y-3">
+                    <button id="modalAddToCartBtn" class="w-full py-3.5 bg-brandAmber hover:bg-woodTeak text-white font-semibold rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <span>Add to Bag</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 bg-woodDark text-white px-5 py-3 rounded-xl shadow-2xl flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+        <span id="toastMessage" class="text-xs font-medium">Item added to cart!</span>
+    </div>
+
+    <!-- Application JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
